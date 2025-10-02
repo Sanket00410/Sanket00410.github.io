@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanket Admile - Cybersecurity Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .header .subtitle {
+            font-size: 1.3em;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #34495e;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            margin: 30px 0;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+
+        .experience-item {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border-left: 5px solid #3498db;
+        }
+
+        .experience-title {
+            color: #2c3e50;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        .experience-company {
+            color: #7f8c8d;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .achievement-list {
+            list-style: none;
+        }
+
+        .achievement-list li {
+            margin: 15px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .achievement-list li::before {
+            content: '🔐';
+            position: absolute;
+            left: 0;
+        }
+
+        .client-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .client-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #e74c3c;
+        }
+
+        .client-name {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #27ae60;
+        }
+
+        .project-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #9b59b6;
+        }
+
+        .skill-category h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .client-grid,
+            .project-grid,
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Sanket Admile</h1>
+            <p class="subtitle">Information Security Specialist | Industrial IoT Security Expert</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Pune, Maharashtra, India</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>admile.sanket@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 9922391523</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2><i class="fas fa-user"></i> Professional Overview</h2>
+            <p>Results-driven Information Security Specialist with <strong>2+ years</strong> of hands-on experience implementing secure IoT solutions and cybersecurity protocols for major international manufacturing clients. Proven track record of deploying secure IoT systems across <strong>6 major industrial clients</strong> including FANUC, TVS, and Skoda, with focus on operational efficiency and security compliance.</p>
+            <br>
+            <p><strong>Key Expertise:</strong> Industrial IoT Security • Network Vulnerability Assessment • Python Automation • Threat Detection • Risk Assessment</p>
+        </section>
+
+        <section class="section">
+            <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+            <div class="experience-item">
+                <div class="experience-title">Operations Engineer - Information Security</div>
+                <div class="experience-company">Wipro Linecraft AI | Pune, India | July 2023 – Present</div>
+
+                <h4>🔐 Security Infrastructure Management</h4>
+                <ul class="achievement-list">
+                    <li>Deployed secure IoT solutions for 6 major industrial clients supporting <strong>150+ connected devices</strong> with <strong>zero security incidents</strong> over 18+ months</li>
+                    <li>Configured SSL/TLS encryption and network segmentation protocols resulting in <strong>100% security compliance</strong> across all client deployments</li>
+                    <li>Successfully completed <strong>12+ security audits</strong> with perfect compliance ratings</li>
+                </ul>
+
+                <h4>📊 Data Security & Analytics</h4>
+                <ul class="achievement-list">
+                    <li>Developed Python automation scripts processing <strong>10,000+ data points daily</strong></li>
+                    <li>Generated security insights that improved client threat detection speed by <strong>40%</strong></li>
+                    <li>Implemented advanced monitoring systems for real-time threat identification</li>
+                </ul>
+
+                <h4>🛡️ Vulnerability Assessment & Testing</h4>
+                <ul class="achievement-list">
+                    <li>Conducted comprehensive security evaluations using Wireshark, Nmap, and OWASP ZAP</li>
+                    <li>Identified and documented <strong>25+ vulnerabilities</strong> before production deployment</li>
+                    <li>Performed penetration testing across multiple industrial environments</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><i class="fas fa-shield-alt"></i> Key Industrial Security Implementations</h2>
+            <div class="client-grid">
+                <div class="client-card">
+                    <div class="client-name">FANUC Corporation</div>
+                    <p>Implemented secure IoT monitoring for robotic manufacturing lines with <strong>99.8% uptime</strong> and advanced threat detection systems.</p>
+                </div>
+
+                <div class="client-card">
+                    <div class="client-name">TVS Group</div>
+                    <p>Deployed comprehensive automotive IoT security framework covering <strong>3 manufacturing facilities</strong> with network monitoring.</p>
+                </div>
+
+                <div class="client-card">
+                    <div class="client-name">GLAT Engineering</div>
+                    <p>Configured industrial automation security for critical infrastructure systems with zero-trust architecture implementation.</p>
+                </div>
+
+                <div class="client-card">
+                    <div class="client-name">Bharth Forge</div>
+                    <p>Established secure manufacturing network monitoring and data collection systems with encrypted communications.</p>
+                </div>
+
+                <div class="client-card">
+                    <div class="client-name">Skoda Auto</div>
+                    <p>Supported automotive cybersecurity protocol implementation and compliance validation with industry standards.</p>
+                </div>
+
+                <div class="client-card">
+                    <div class="client-name">Santoor</div>
+                    <p>Secured consumer goods manufacturing IoT infrastructure with comprehensive security monitoring and threat detection.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><i class="fas fa-project-diagram"></i> Technical Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-title">Secure Smart Home Automation (2023)</div>
+                    <p>Developed Python-based voice-controlled IoT system with AWS IoT integration and Alexa compatibility. Implemented multi-layer security including device authentication and encrypted communication.</p>
+                    <p><strong>Technologies:</strong> Python, AWS IoT Core, SSL/TLS, Voice Recognition APIs</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Industrial Robotic Arm Security Integration (2022)</div>
+                    <p>Programmed secure automation sequences using Ladder Logic and PL-Soft for precision manufacturing with role-based access control and encrypted command transmission.</p>
+                    <p><strong>Technologies:</strong> Ladder Logic, PL-Soft, HMI Development, Industrial Protocols</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Power System Security Analysis (2022)</div>
+                    <p>Utilized MATLAB for transformer design optimization achieving <strong>15% efficiency improvement</strong>. Conducted security analysis of power system communication protocols.</p>
+                    <p><strong>Technologies:</strong> MATLAB, Power System Analysis, Network Security Assessment</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><i class="fas fa-cogs"></i> Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Information Security</h3>
+                    <ul class="skill-list">
+                        <li>Industrial IoT Security</li>
+                        <li>Network Vulnerability Assessment</li>
+                        <li>Penetration Testing</li>
+                        <li>Threat Detection & Analysis</li>
+                        <li>Risk Assessment</li>
+                        <li>Incident Response</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Programming & Scripting</h3>
+                    <ul class="skill-list">
+                        <li>Python Automation</li>
+                        <li>SQL Data Analysis</li>
+                        <li>Bash/Shell Scripting</li>
+                        <li>PowerShell</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Security Tools</h3>
+                    <ul class="skill-list">
+                        <li>Wireshark, Nmap</li>
+                        <li>OWASP ZAP, Burp Suite</li>
+                        <li>Kali Linux, Metasploit</li>
+                        <li>Vulnerability Scanning</li>
+                        <li>Nessus</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Industrial Protocols</h3>
+                    <ul class="skill-list">
+                        <li>OPC UA, Modbus TCP/RTU</li>
+                        <li>MQTT, Ethernet/IP</li>
+                        <li>SSL/TLS Implementation</li>
+                        <li>PLCs (Siemens, Allen-Bradley)</li>
+                        <li>SCADA, Kepware</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><i class="fas fa-trophy"></i> Professional Achievements</h2>
+            <ul class="achievement-list">
+                <li><strong>Zero Security Incidents:</strong> Maintained perfect security record across all client deployments over 2+ years</li>
+                <li><strong>95% Client Satisfaction:</strong> Achieved excellent ratings based on post-deployment security surveys</li>
+                <li><strong>20% Process Improvement:</strong> Contributed to faster deployment timelines through security optimization</li>
+                <li><strong>Leadership Development:</strong> Progressed from trainee to mentoring new team members within 18 months</li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <h3>Contact Information</h3>
+            <p>For detailed project discussions, security consultations, or professional opportunities:</p>
+            <br>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>admile.sanket@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 9922391523</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Pune, Maharashtra, India</span>
+                </div>
+            </div>
+            <br>
+            <p><em>This portfolio demonstrates proven expertise in industrial cybersecurity with documented project outcomes.</em></p>
+        </footer>
+    </div>
+
+    <script>
+        // Add smooth scrolling for better user experience
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add fade-in animation for sections
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
